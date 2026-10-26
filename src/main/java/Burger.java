@@ -1,12 +1,7 @@
 public class Burger implements Priceable{
 
-    private double basePrice;
-    private String itemDescription;
-
-    public Burger(){
-        basePrice = 5.5;
-        itemDescription = "Burger";
-    }
+    private final double basePrice = 5.5;
+    private final String itemDescription = "Burger";
 
     @Override
     public double calculatePrice(){

@@ -1,12 +1,7 @@
 public class Fries implements Priceable{
 
-    private double basePrice;
-    private String itemDescription;
-
-    public Fries(){
-        basePrice = 3.0;
-        itemDescription = "Fries";
-    }
+    private final double basePrice = 2.75;
+    private final String itemDescription = "Fries";
 
     @Override
     public double calculatePrice(){

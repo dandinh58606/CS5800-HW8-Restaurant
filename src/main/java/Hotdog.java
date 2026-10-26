@@ -1,12 +1,7 @@
 public class Hotdog implements Priceable{
 
-    private double basePrice;
-    private String itemDescription;
-
-    public Hotdog(){
-        basePrice = 4.25;
-        itemDescription = "Hotdog";
-    }
+    private final double basePrice = 4.25;
+    private final String itemDescription = "Hotdog";
 
     @Override
     public double calculatePrice(){
